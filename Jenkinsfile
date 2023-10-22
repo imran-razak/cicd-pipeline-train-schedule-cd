@@ -24,7 +24,7 @@ pipeline {
                                         sourceFiles: 'dist/trainSchedule.zip',
                                         removePrefix: 'dist/',
                                         remoteDirectory: '/tmp',
-                                        execCommand: 'clear'
+                                        execCommand: 'sudo clear'
                                     )
                                 ]
                             )
