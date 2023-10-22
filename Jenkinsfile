@@ -21,8 +21,8 @@ pipeline {
                                 configName: 'production',
                                 transfers: [
                                     sshTransfer(
-                                        sourceFiles: '/var/lib/jenkins/jobs/train-schedule-cd/branches/master/builds/21/archive/dist/trainSchedule.zip',
-                                        removePrefix: '/var/lib/jenkins/jobs/train-schedule-cd/branches/master/builds/21/archive/dist/',
+                                        sourceFiles: 'dist/trainSchedule.zip',
+                                        removePrefix: 'dist/',
                                         remoteDirectory: '/tmp',
                                         execCommand: 'clear'
                                     )
